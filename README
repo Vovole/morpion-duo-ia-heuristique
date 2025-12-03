@@ -1,0 +1,41 @@
+Compilation avec MinGW
+
+Si tu as MinGW installé, tu peux compiler le projet avec mingw32-make :
+
+Crée un fichier Makefile avec le contenu suivant :
+
+CC = gcc
+CFLAGS = -Wall
+TARGET = morpion.exe
+SRC = main.c IA_heuristique.c
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
+
+clean:
+	del $(TARGET)
+
+
+Dans le terminal, place-toi dans le dossier du projet et lance :
+
+mingw32-make
+
+
+Pour supprimer le .exe généré :
+
+mingw32-make clean
+
+Exécution
+
+Après compilation, lance le jeu avec :
+
+morpion.exe
+
+
+Suivez les instructions dans la console pour jouer.
+
+Auteur
+
+Thomas Pailhes
