@@ -1,3 +1,5 @@
+README généré par IA chatgpt 
+
 Compilation avec MinGW
 
 Si tu as MinGW installé, tu peux compiler le projet avec mingw32-make :
